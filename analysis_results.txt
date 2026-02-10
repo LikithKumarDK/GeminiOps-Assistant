@@ -1,0 +1,11 @@
+Analyzing AI_assistant...                                       
+
+   info - Don't invoke 'print' in production code - bin\test_api.dart:11:5 - avoid_print
+   info - Don't invoke 'print' in production code - bin\test_api.dart:13:5 - avoid_print
+   info - Don't invoke 'print' in production code - bin\test_api.dart:15:5 - avoid_print
+  error - The function 'StateProvider' isn't defined - lib\providers\chat_provider.dart:73:34 - undefined_function
+   info - Missing type annotation - lib\screens\chat_screen.dart:70:25 - strict_top_level_inference
+   info - Missing type annotation - lib\screens\chat_screen.dart:70:35 - strict_top_level_inference
+  error - The named parameter 'bottom' isn't defined - lib\screens\chat_screen.dart:78:67 - undefined_named_parameter
+  error - The named parameter 'border' isn't defined - lib\widgets\chat_history_drawer.dart:152:7 - undefined_named_parameter
+
