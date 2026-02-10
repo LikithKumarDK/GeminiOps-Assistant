@@ -1,13 +1,13 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import '../models/chat_message.dart';
 import '../models/chat_session.dart';
 import '../models/chat_project.dart';
 import '../services/gemini_service.dart';
 
-const String _defaultApiKey = 'AIzaSyDO-dBI-bQxHiy7FO2omEWPPHikwZ_jWaE';
-
 final geminiServiceProvider = Provider<GeminiService>((ref) {
-  return GeminiService(apiKey: _defaultApiKey);
+  final apiKey = dotenv.env['GEMINI_API_KEY'] ?? '';
+  return GeminiService(apiKey: apiKey);
 });
 
 class SelectedModel extends Notifier<String> {
